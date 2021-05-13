@@ -23,6 +23,10 @@ intents:
     use_entities: true
 - chitchat:
     use_entities: true
+- nlu_fallback:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -63,6 +67,12 @@ responses:
   - text: Sono un Bot, creato dal ReSIA
   - text: Ma dai, sono umano, non scherzare!
   - text: Mi chiamo Eliza sono una collega
+  utter_out_of_scope:
+  - text: Mi dispiace ma non posso lavorare questa richiesta.
+  utter_please_rephrase:
+  - text: Mi dispiace, non ho capito bene, puoi riformulare la domanda per favore?
+  utter_default:
+  - text: Mi spiace, non ho capito bene come procedere, puoi riformulare la domanda?
 actions: []
 forms: {}
 e2e_actions: []
