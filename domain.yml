@@ -19,22 +19,50 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+- faq:
+    use_entities: true
+- chitchat:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
+  - text: Ciao, come stai?
+  - text: Hey, come stai oggi?
+  utter_unhappy:
+  - text: Mi dispiace molto. Come posso aiutarti?
+  - text: Non ci pensare. Come posso aiutarti?
   utter_happy:
-  - text: Great, carry on!
+  - text: Ottimo! Come posso aiutarti?
+  - text: Alla grande, come posso esserti utile?
   utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: A presto! Buon proseguimento ;)
+  - text: Ciao, quando hai bisogno sono qui ;)
+  - text: Ciao, alla prossima ;)
+  utter_faq:
+  - text: testing this solutions
+  utter_faq/crono_scopo:
+  - text: Crono è un sistema informatico progettato per fornire agli Enti dell’AM il servizio di rilevazione dell’orario di inizio e fine dell’attività lavorativa del personale
+  utter_faq/crono_link:
+  - text: Il sistema Crono è raggiungibile all’indirizzo http://crono.aeronautica.difesa.it
+  utter_faq/crono_unita_organizzativa:
+  - text: E' un gruppo di lavoro dell'ente
+  utter_faq/crono_aggiornamento_ente:
+  - text: 'L’Amministratore del nuovo Ente deve inviare un ticket ad aeroresia.helpdesk@aeronautica.difesa.it indicando i seguenti dati: <br /> - Codice e Descrizione del nuovo ente;  <br />- Codice e Descrizione della nuova UO; <br /> - Data ultimo giorno FEO vecchio ente e data inizio FEO nuovo ente;  <br />- Dati anagrafici del personale trasferito (Grado, Cognome, Nome, Codice Fiscale)  <br />In caso di richiesta cumulativa allegare al ticket un elenco dei dati sopra riportati. Le richieste pervenute da utenti standard non verranno evase.'
+  utter_faq/crono_assegnazione_privilegi_amm_crono:
+  - text: 'La richiesta deve essere inviata dal Comandante dell’Ente (o suo delegato autorizzato) inviando un ticket ad aeroresia.helpdesk@aeronautica.difesa.it  con i seguenti dati: <br />- Grado, Cognome, Nome, Codice Fiscale <br />- indicare se Rimozione o Assegnazione privilegi In caso di richiesta cumulativa allegare un elenco dei dati sopra riportati. <br />Le richieste pervenute da utenti standard non verranno evase.'
+  utter_chitchat:
+  - text: testing this solutions
+  utter_chitchat/ask_weather:
+  - text: non saprei, vedi un'attimo alla finestra!
+  utter_chitchat/ask_age:
+  - text: non saprei la mia età, chiedi a Mario!
+  utter_chitchat/calcoli:
+  - text: fa quattro, ma non sono qui per fare calcoli!
+  utter_chitchat/iamabot:
+  - text: Sono un Bot, creato dal ReSIA
+  - text: Ma dai, sono umano, non scherzare!
+  - text: Mi chiamo Eliza sono una collega
 actions: []
 forms: {}
 e2e_actions: []
