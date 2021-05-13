@@ -1,88 +1,146 @@
 version: "2.0"
+
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
+    - ciao
+    - salve
+    - buongiorno
+    - buonasera
+    - buon pomeriggio
+    - buondì
+    - ehilà
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hello
+
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - arrivederci
+    - alla prossima
+    - a dopo
+    - ci vediamo
+    - addio
+
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - si
+    - sì
+    - certo
+    - sicuro
+    - ok
+    - va bene
+    - bene
+
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - non credo
+    - non volevo questo
+    - non mi torna
+    - veramente no
+
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - bene
+    - alla grande
+    - non c'è male
+    - da dio
+    - benissimo
+    - sto bene
+    - molto bene grazie
+
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - male
+    - malissimo
+    - molto male
+    - non bene
+
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-- intent: sfida
+    - sei un bot?
+    - sei un umano?
+    - sto parlando a una macchina?
+    - sei una persona?
+    - sei un robot o una persona?
+
+
+- intent: faq/crono_scopo
+  examples: |
+    - cos'è crono?
+    - che cosa è crono?
+    - a cosa serve crono?
+    - che programma è crono?
+    - cos'è il sistema crono?
+    - dimmi che cos'è crono
+    - spiegami cos'è crono
+
+- intent: faq/crono_link
+  examples: |
+    - qual è l’indirizzo del sistema crono?
+    - mi puoi dare il link al sistema crono?
+    - qual'è l'indirizzo di crono?
+    - come mi collego a crono?
+    - come posso raggiungere il sito di crono?
+    - come posso collegarmi al sito di crono?
+
+- intent: faq/crono_unita_organizzativa
+  examples: |
+    - cos'è un'unità organizzativa?
+    - cosa è una UO?
+    - spiegami cosa è un'unità organizzativa
+    - cosa è l'unità organizzativa in crono?
+    - vorrei sapere cosa è un'unità organizzativa nel crono
+
+- intent: faq/crono_aggiornamento_ente
+  examples: |
+    - come aggiorno l'ente se sono stato trasferito?
+    - come aggiorno l'ente se mi trasferiscono?
+    - devo aggiornare l'ente causa trasferimento
+    - come faccio ad aggiornare l'ente se sono stato trasferito?
+    - come aggiorno l'UO se sono stato trasferito?
+    - come aggiorno l'UO di appartenenza se mi trasferiscono?
+    - devo aggiornare l'UO di appartenenza causa trasferimento
+    - come faccio ad aggiornare l'UO se sono stato trasferito?
+    - come aggiorno Crono se sono stato trasferito?
+    - come aggiorno Crono se mi trasferiscono?
+    - devo aggiornare Crono causa trasferimento
+    - come faccio ad aggiornare Crono se sono stato trasferito?
+    - come aggiorno Crono se sono in un nuovo ente?
+    - come faccio ad aggiornare Crono se sono stato trasferito ad un nuovo ente?
+    - come aggiorno Crono se mi trasferiscono ad un nuovo ente?
+    - come aggiorno l'UO se sono ad un nuovo ente?
+
+- intent: faq/crono_assegnazione_privilegi_amm_crono
+  examples: |
+    - vorrei inserire un amministratore di Crono
+    - come faccio ad inserire un amministratore di Crono?
+    - come si può inserire un nuovo amministratore Crono?
+    - ho bisogno di rimuovere un amministratore Crono, come si fa?
+    - come si fa a rimuovere privilegi amministratore crono?
+    - come posso rimuovere privileggi amministratore?
+    - chi può assegnare privileggi amministratore crono?
+    - chi può rimuovere privileggi amministratore crono?
+    - come si fa ad assegnare i privileggi di amministratore?
+    - vorrei richiedere assegnazione privileggi amministratore
+    - ho bisogno di sostituire l'amministratore di crono
+    - come viene richiesta la sostituzione di un amministratore crono?
+
+- intent: chitchat/iamabot
   examples: |
     - sei un robot?
+    - sei un umano?
+    - sto parlando a una macchina o ad un uomo?
+    - sei un bot o un umano?
+- intent: chitchat/ask_weather
+  examples: |
+    - com'è il tempo oggi?
+    - che tempo fa?
+- intent: chitchat/ask_age
+  examples: |
+    - quanti anni hai?
+    - mi dici la tua età?
+- intent: chitchat/calcoli
+  examples: |
+    - quanto fa 2+2?
+    - scusa quanto fa due più due?
